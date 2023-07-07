@@ -1,0 +1,95 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+height: 60px;
+padding: 10px;
+background-color: rgb(43, 6, 55);
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+nav ul{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.game-container{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    gap: 40px;
+}
+
+/* left is the grid-part */
+
+.left{
+    display: grid;
+    grid-template-columns: repeat(3,12vw);
+    grid-template-rows: repeat(3,14vh);
+}
+
+.box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.box:hover{
+
+    background-color: rgb(112, 101, 112);
+}
+
+.boxtext{
+    font-size: 5vw;
+}
+
+.turn{
+    font-size: 1.3rem;
+}
+
+#reset{
+    margin: 0 23px;
+    padding: 8px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+
+}
+
+/* utility classes for changin borders */
+
+.br-0{
+
+     border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.win-container h1{
+    text-align: center;
+    font-size: 4rem;
+}
